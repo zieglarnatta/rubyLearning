@@ -8,14 +8,14 @@ puts "Hello, Matz! " * 3
 puts "Hey Matz, I’m running " + `ruby --version`
 
 # assigning variables
-hi = "Making Hi Matz as a value to variable hi"
+hi = "Making Hi Matz as a value to variable 'hi'"
 puts hi
 
 # 2 variables using + method
 greeting = "How are you Matz?"
 puts hi + " " + greeting
 
-# exprssion substitution
+# expression substitution
 person = "Matz!!!"
 
 puts "hello #{person} ?"
