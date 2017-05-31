@@ -22,3 +22,9 @@ puts "hello #{person} ?"
 
 # #{} also returns the evaluated value within the curly braces
 puts "2 plus 2 in braces expression substitution: #{2+2}"
+
+#2 ways of using a system command
+system "echo 'Hello, Matz!'"
+
+#submitting the system command in separate argument
+system "echo", "Hello,", "Matz!"
