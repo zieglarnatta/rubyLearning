@@ -92,3 +92,18 @@ puts "Result: "
 print "Who do you want to say hello to? "
 hello = gets
 puts "Hello, " + hello
+
+#formatting to put spaces between commands
+puts""
+puts""
+
+#string formatting
+puts "hi = Hello, %s and then puts hi % in double quotes and do a puts hi %"
+puts "Result: "
+hi = "Hello, %s"
+puts hi % "Someone"
+puts hi % "Anyone"
+
+#formatting to put spaces between commands
+puts""
+puts""
