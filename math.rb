@@ -74,3 +74,11 @@ puts""
 puts "assignment operations x/=2 to divide by 2"
 puts "Result: "
 puts "#{x/=2}"
+
+#output formatting
+puts""
+puts""
+
+puts "Math module Math.sqrt(16)"
+puts "Result: "
+puts "#{Math.sqrt(16)}"
