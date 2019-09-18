@@ -1,4 +1,4 @@
-#Generalhigh level logic:
+#General high level logic:
 #greet the user
 #print "Welcome to the sentence reverser. Please input your sentence and my ruby code will parse it, put it into an array, and then rever the order of the sentence and capitalizing the first word in the resulting reversed sentence"
 
