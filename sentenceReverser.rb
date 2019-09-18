@@ -1,6 +1,6 @@
 #General high level logic:
 #greet the user
-#print "Welcome to the sentence reverser. Please input your sentence and my ruby code will parse it, put it into an array, and then rever the order of the sentence and capitalizing the first word in the resulting reversed sentence"
+#print "Welcome to the sentence reverser. Please input your sentence and my ruby code will parse it, put it into an array, and then reverse the order of the sentence and capitalizing the first word in the resulting reversed sentence"
 
 #get input from user
 #getSentence = gets
@@ -22,13 +22,13 @@ class SentenceReverse
    def sentenceReverser
     #greet the user
     #print "Welcome to the sentence reverser." 
-    #for future development Please input your sentence and my ruby code will parse it, put it into an array, and then rever the order of the sentence and capitalizing the first word in the resulting reversed sentence"
+    #for future development Please input your sentence and my ruby code will parse it, put it into an array, and then reverse the order of the sentence and capitalizing the first word in the resulting reversed sentence"
     
-    #simpler static qucik and dirty showcase of capability to reverse the order of an array
+    #simpler static quick and dirty showcase of capability to reverse the order of an array
     quickArray = Array.new
     quickArray = ["Wherever ", "you ", "go, ", "you ", "can ", "always ", "find ", "beauty."]
     
-    #swap the capitalization, add period to whatever and try to remove period from beauty
+    #swap the capitalization, add period to whatever, remove and add the comma from certain words and try to remove period from beauty
     characterSeven = quickArray[7].capitalize.sub(".","")
     characterZero = quickArray[0].downcase.rstrip + "."
     
@@ -58,16 +58,18 @@ class SentenceReverse
    end
 end
 
-print "Welcome to the sentence reverser. I will try to reverse “Wherever you go, you can always find beauty.”"
-printf " "
-print "and would try to return as “Beauty find always, can you go you wherever.”" 
+
+print "Welcome to the sentence reverser. I will try to reverse “Wherever you go, you can always find beauty.” \n"
+
+print "and would try to return as “Beauty find always, can you go you wherever.”\n" 
 #sentence = SentenceReverse.new
 #simpler static qucik and dirty showcase of capability to reverse the order of an array
 quickArray = Array.new
-p "This is the static input:"
+p "This is the static input: "
+
 p quickArray = ["Wherever ", "you ", "go, ", "you ", "can ", "always ", "find ", "beauty."]
 
-#swap the capitalization, add period to whatever and try to remove period from beauty
+#swap the capitalization, add period to whatever, add and remove commas and try to remove period from beauty
 characterSeven = quickArray[7].capitalize.sub(".","")
 characterZero = quickArray[0].downcase.rstrip + "."
 characterFive = quickArray[5].rstrip + ","
@@ -75,5 +77,7 @@ characterTwo = quickArray[2].sub(",","")
 
 #need to use for i = 0 to end of array to be more efficient rather than this mnanual approach
 newSentence = characterSeven + " " + quickArray[6] + " " + characterFive + " " + quickArray[4] + " " + quickArray[3] + " " + characterTwo + " " + quickArray[1] + " " + characterZero
+
 p "This is the result: "
+
 p newSentence
